@@ -68,7 +68,7 @@ async function scoreCommandHandler(interaction) {
 
 // Aggiungi il comando slash al bot
 const commands = [scoreCommand.toJSON()];
-const rest = new REST({ version: '9' }).setToken('MTA5NDk2NTAxNDY1NTQxODQ2OA.GtjtWB.CfZhtcP8IiWqgRPLriPstWiLic-rFzbFM_OGu4');
+const rest = new REST({ version: '9' }).setToken('BOT_TOKEN');
 
 (async () => {
   try {
@@ -98,4 +98,4 @@ client.on('interactionCreate', async (interaction) => {
 });
 
 // Avvio del bot
-client.login('MTA5NDk2NTAxNDY1NTQxODQ2OA.GtjtWB.CfZhtcP8IiWqgRPLriPstWiLic-rFzbFM_OGu4')
+client.login('BOT_TOKEN')
